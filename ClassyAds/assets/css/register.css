@@ -1,0 +1,305 @@
+/*import universal-file */
+@import url("universal-file.css");
+/*login form*/
+.mb-20
+{
+    margin-bottom: 20px;
+}
+.contact-row {
+    display: flex;
+    justify-content: center;
+     gap: 28px; 
+    padding: 90px 0;
+}
+.p-90 {
+    padding: 90px 0;
+}
+.login-card-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 45px 60px;
+    background: #fff;
+}
+
+.form-tittle {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+.login-card-container2 {
+    padding: 50px 45px 60px;
+    background: #fff;
+}
+.inline-inputs {
+    display: flex;
+    gap: 25px;
+}
+.form-label {
+    display: inline-block;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+.form-control {
+    color: #4950579e;
+    padding: 10px 12px;
+    width: 100%;
+    font-size: 17px;
+    line-height: 1.2;
+    border: 1px solid rgba(10, 77, 60, 0.2);
+    margin-top: 0px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    background-color: #fff;
+}
+.form-control:focus {
+    border-color: var(--link-clr);
+    outline: 0;
+    background-color: #fff;
+}
+.btn-login {
+    color: #fff;
+    border-color: transparent;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 12px 22px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    width: 100%;
+    max-width: fit-content;
+    margin-top: 25px;
+    background-color: var(--link-clr);
+}
+.btn-login:hover {
+   background-color: var(--hover-clr);
+}
+
+.page-link {
+   color: var(--link-clr);
+}
+
+.page-link:hover {
+   color: var(--hover-clr);
+}
+.error-message-box {
+    display: none;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #f1113e1c;
+    padding: 18px 10px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: all 0.3s linear;
+}
+
+.error-message {
+    color: #f1113e;
+    font-size: 17px;
+}
+.close-btn {
+    position: absolute;
+    right: 1%;
+    top: 4%;
+    font-size: 16px;
+    color: #f1113e;
+    padding: 3px 6px;
+    text-transform: lowercase;
+}
+/*login form*/
+/*contact-row*/
+.contact-box {
+    padding: 32px 30px 18px;
+    background: #fff;
+}
+.contact-label {
+    font-size: 16px;
+    color: #4d4d4d;
+    font-family: 'Nanum Gothic bold';
+}
+.bold-heading {
+    font-family: 'Nanum Gothic';
+    color: #000000;
+    font-size: 20px;
+}
+.details {
+    margin-bottom: 20px;
+}
+.contact-dis {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.contact-dis-box {
+    margin-top: 12px;
+}
+.dis-block {
+display: block;
+}
+/*contact-row*/
+
+/* faq section  */
+.fagContainer {
+    border-radius: 15px;
+    border: 0.8px solid var(--pruple-clr);
+    overflow: hidden;
+}
+
+
+.sectionHeading {
+    color: var(--link-clr);
+    font-size: 32px;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+.faq-fav {
+    background: var(--white-clr);
+    color: var(--pruple-clr);
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 28px;
+    margin: 5px 8px 0 0;
+}
+.disclaimerContainer {
+  border-radius: 10px;
+  border: 1px solid rgba(22, 22, 22, 0.14);
+  padding: 25px ;
+  margin-bottom: 60px;
+}
+
+.disclaimerContainer p {
+    color: #787878;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 14px;
+}
+.disclaimerFont{
+font-size:20px !important;
+}
+
+/* faq section  */
+
+/* .accordionsSections */
+
+.accordion h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.accordion {
+    width: 70%;
+    margin: 40px auto 0;
+}
+.accordion .accrd {
+    position: relative;
+    /* margin: 35px 0px; */
+    border: 1px solid rgb(172 172 172 / 44%);
+    padding: 13px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.accordion .label {
+    position: relative;
+    color: var(--primary-clr);
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: 100;
+}
+.accrd.active .label {
+    color: var(--link-clr);
+}
+.accrd .label:hover {
+    color: var(--hover-clr);
+}
+
+.per-btl p {
+    margin-bottom: 0 !important;
+}
+.accordion .accrd.active .content {
+    height: auto;
+    padding-top: 6px;
+    line-height: 1.8;
+}
+.accordion .content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+    color: #08203c;
+   
+}
+
+.content p {
+    color: var(--primary-clr);
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+.content p:last-child
+{
+  margin-bottom: 0px;
+}
+
+.accordion hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+}
+
+/* .accordionsSections */
+
+
+@media(max-width:768px)
+{
+
+  /*  login-card-container2*/
+    .login-card-container2 {
+    padding: 46px 30px 50px;
+    }
+ /*  login-card-container2*/
+    /* faq section  */
+    .accordion {
+    width: 100%;
+    }
+    .accordion .label {
+    font-size: 18px;  
+    }
+    /* faq section  */
+}
+
+
+/*responsive 500px screen*/
+@media(max-width:500px)
+{
+/* login-card-container */
+.inline-inputs {
+    flex-direction: column;
+}
+.login-card-container {
+padding: 44px 35px 50px;
+}
+.btn-login {
+font-size: 14px;
+padding: 9px 18px;
+}
+.form-label {
+    font-size: 15px;
+}
+.sign-btn {
+    font-size: 15px;
+}
+/* login-card-container */
+ /* faq section  */
+.accordion .label {
+    font-size: 18px;
+}
+ /* faq section  */
+}
+/*responsive 500px screen*/

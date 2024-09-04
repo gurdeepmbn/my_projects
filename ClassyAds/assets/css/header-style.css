@@ -1,0 +1,259 @@
+/*header*/
+/*navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffff;
+    padding: 4px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 0px #4d4d4d;
+}
+.toggle-box
+{
+   display: none; 
+}
+/*header-title*/
+.header-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: 'Nanum Gothic strong';
+}
+/*header-title*/
+/*navbar-menu*/
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+}
+.menu-link {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #25262a;
+    transition: 0.3s linear;
+}
+.menu-list {
+    padding: 30px 0;
+}
+.menu-link:hover {
+    color: var(--link-clr);
+}
+.menu-link.active
+{
+   color: var(--link-clr); 
+}
+
+.ad-btn-box {
+    padding: 13px 17px 13px 30px;
+    background-color: var(--link-clr);
+    border-radius: 4px;
+}
+.ad-btn {
+    color: var(--secondary-clr);
+    border-radius: 5px;
+    font-size: 15px;
+    position: relative;
+    display: block;
+    letter-spacing: 0.5px;
+}
+.ad-btn:before {
+    content: "\2b";
+    position: absolute;
+    font-size: 17px;
+    left: -19%;
+    top: 0%;
+}
+.ad-btn:hover
+{
+  background-color: #1fdfc4;
+   color: var(--secondary-clr);    
+}
+
+.menu-list.show-dropdown {
+    position: relative;
+    transition: all 0.3s linear;
+    margin-right: 13px;
+}
+.dropdown-icn:after {
+    content: "\f0d7";
+    position: absolute;
+    font-size: 15px;
+    right: -38%;
+    top: 39%;
+    font-family: 'FontAwesome';
+}
+.menu-box
+{
+    display: none;
+}
+.sub-menu {
+     padding: 10px 0px;
+    position: absolute;
+    background: #ffff;
+    width: 12em;
+    border-top: 2px solid var(--link-clr);
+    margin-top: 20px;
+}
+.show-dropdown:hover .menu-box
+{
+    display: block;
+}
+.sub-menu-list {
+    padding: 10px 20px;
+}
+.sub-menu-list:hover {
+    background: #eeefef;
+}
+.sub-menu-link {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.bar-line
+{
+    position: relative;
+    margin-right: 30px;
+}
+.bar-line:after {
+    content: "|";
+    position: absolute;
+    font-size: 15px;
+    right: -60%;
+    top: 38%;
+    font-family: 'FontAwesome';
+    /* margin-left: 50px; */
+}
+/*navbar-menu*/
+/*navbar*/
+/*header*/
+
+/*media query 768*/
+@media(max-width:768px)
+{
+
+/*navbar*/
+.navbar {
+    padding: 25px 20px;
+}
+ .toggle-box
+{
+   display: block; 
+}
+.toggle-btn {
+    font-size: 18px;
+}   
+.navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 4%;
+    top: 22%;
+    background: #ffffff;
+    padding: 5px 20px 25px;
+    width: 11em;
+    gap: 15px;
+    /* border: 1px solid; */
+    border: 2px solid #21f7d9ad;
+    Z-INDEX: 999;
+    border-radius: 4px;
+}
+/*.show-navbar
+{
+    display: flex;
+}*/
+.menu-list {
+    margin-top: 15px;
+    padding: 0;
+}
+.menu-link {
+    font-size: 14px;
+}
+
+.ad-btn-box {
+    padding: 10px 16px 10px 25px;
+    width: 100%;
+    max-width: max-content;
+}
+.dropdown-icn:after {
+    font-size: 13px;
+    top: 8%;
+    left: 37%;
+    right: 0;
+}
+.sub-menu {
+    left: -140%;
+    top: 0;
+    z-index: 99;
+    position: absolute;
+    background: #ffff;
+    width: 10em;
+    padding: 5px 0 10px;
+    border: 2px solid var(--link-clr);
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.sub-menu-list {
+    padding: 10px 12px;
+}
+
+.sub-menu-link {
+    font-size: 14px;
+}
+
+}
+/*navbar*/
+
+    
+/*media query 768*/
+
+/*media query 500*/
+
+@media(max-width:500px)
+{
+.navbar-menu {
+    top: 34%;
+    padding: 5px 20px 22px;
+} 
+.menu-link {
+    font-size: 13px;
+}
+.menu-list {
+    margin-top: 10px;
+}
+.ad-btn-box {
+    padding: 8px 12px 8px 21px;
+}
+/*sub-menu*/
+
+.sub-menu {
+    width: 9em;
+    padding: 8px 0 10px;
+}
+.sub-menu-list {
+    padding: 6px 12px;
+}
+.sub-menu-link {
+    font-size: 13px;
+}
+/*sub-menu*/
+
+}
+/*media query 500*/
+
+/*media query 320*/
+
+@media(max-width:320px)
+{
+/*sub-menu*/
+.sub-menu {
+    left: -118%;
+    top: 12px;
+    width: 8em;
+}
+/*sub-menu*/
+}
+
+/*media query 320*/
